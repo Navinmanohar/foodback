@@ -27,7 +27,9 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
-
+app.get("/",(req,res)=>{
+  res.send("hello")
+})
 const port = 3001;
 
 connectDB().then(() => {
